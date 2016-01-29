@@ -72,19 +72,19 @@ namespace ycnotify
             switch(minutesCombobox.SelectedIndex)
             {
                 case 0: // 1 min
-                    ycnotify.Properties.Settings.Default.interval = 10000;
+                    ycnotify.Properties.Settings.Default.interval = 1000 * 60;
                     break;
                 case 1: // 5 min
-                    ycnotify.Properties.Settings.Default.interval = 50000;
+                    ycnotify.Properties.Settings.Default.interval = 1000 * 60 * 5;
                     break;
                 case 2: // 10 min
-                    ycnotify.Properties.Settings.Default.interval = 100000;
+                    ycnotify.Properties.Settings.Default.interval = 1000 * 60 * 10;
                     break;
                 case 3: // 30 min
-                    ycnotify.Properties.Settings.Default.interval = 300000;
+                    ycnotify.Properties.Settings.Default.interval = 1000 * 60 * 30;
                     break;
                 case 4: // 1 hour
-                    ycnotify.Properties.Settings.Default.interval = 600000;
+                    ycnotify.Properties.Settings.Default.interval = 1000 * 60 * 60;
                     break;
                 default:
                     break;
